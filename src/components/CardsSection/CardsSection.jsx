@@ -26,5 +26,3 @@ function CardsSection() {
 }
 
 export default CardsSection
-
-// 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`
