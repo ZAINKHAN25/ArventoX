@@ -13,9 +13,6 @@ const CardTemplate = ({data}) => {
           This sofa is perfect for modern tropical spaces, baroque inspired
           spaces.
         </Card.Description>
-        <Text textStyle="2xl" fontWeight="medium" letterSpacing="tight" mt="2">
-          $450
-        </Text>
       </Card.Body>
       <Card.Footer>
         <Button width={"100%"} variant="solid">Buy now</Button>
