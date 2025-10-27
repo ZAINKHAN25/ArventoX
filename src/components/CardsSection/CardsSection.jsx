@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import CardTemplate from "./CardTemplate.jsx";
 
-import data from "../../Data/data.js";
+import data from "../../DataFile/Data/data.js";
 
 function CardsSection() {
   return (
