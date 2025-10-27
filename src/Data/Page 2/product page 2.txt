@@ -1,9 +1,3 @@
-NO1
-
-NAME:
-DESCRIPTION:
-LINK:
-
 NO7
 
 NAME:Hand-Controlled Flying Sword 

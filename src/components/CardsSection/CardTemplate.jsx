@@ -1,6 +1,6 @@
-import { Button, Card, Image, Text } from "@chakra-ui/react"
+import { Button, Card, Image, Link, Text } from "@chakra-ui/react"
 
-const CardTemplate = ({data}) => {
+const CardTemplate = ({ data }) => {
   return (
     <Card.Root maxW="sm" overflow="hidden">
       <Image
@@ -8,14 +8,17 @@ const CardTemplate = ({data}) => {
         alt="Green double couch with wooden legs"
       />
       <Card.Body gap="2">
-        <Card.Title>Living room Sofa</Card.Title>
+        <Card.Title>{data.name}</Card.Title>
         <Card.Description>
-          This sofa is perfect for modern tropical spaces, baroque inspired
-          spaces.
+          {data.description}
         </Card.Description>
       </Card.Body>
       <Card.Footer>
-        <Button width={"100%"} variant="solid">Buy now</Button>
+        <Link width={"100%"} variant={"solid"} href={data.link}>
+          <Button width={"100%"} variant="solid">
+            Buy now
+          </Button>
+        </Link>
       </Card.Footer>
     </Card.Root>
   )
