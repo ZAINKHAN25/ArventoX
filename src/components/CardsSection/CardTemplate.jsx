@@ -24,7 +24,7 @@ const CardTemplate = ({ data }) => {
       </Card.Body>
       <Card.Footer>
 
-        <Link width={"100%"} variant={"solid"} href={data.link}>
+        <Link width={"100%"} variant={"solid"} href={data.link} target="_blank">
           <Button width={"100%"} variant="solid">
             Buy now
           </Button>
