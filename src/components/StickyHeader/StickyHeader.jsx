@@ -19,22 +19,24 @@ function StickyHeader({ selectedCategory, setSelectedCategory }) {
       gap={3}
       p={3}
       zIndex={1000}
-      borderTop={"1px solid #cccdcd"}
+      borderTop={".5px solid #cccdcd"}
     >
-      {categories.map((category, index) => (
-        <Button
-          key={index}
-          onClick={() => setSelectedCategory(category)}
-          bg={selectedCategory === category ? "#2563eb" : "#e5e7e9"}
-          color={selectedCategory === category ? "white" : "black"}
-          borderRadius="3xl"
-          _hover={{
-            bg: selectedCategory === category ? "#1d4ed8" : "#d1d5db",
-          }}
-        >
-          {category}
-        </Button>
-      ))}
+      {
+        categories.map((category, index) => (
+          <Button
+            key={index}
+            onClick={() => setSelectedCategory(category)}
+            bg={selectedCategory === category ? "#2563eb" : "#e5e7e9"}
+            color={selectedCategory === category ? "white" : "black"}
+            borderRadius="3xl"
+            _hover={{
+              bg: selectedCategory === category ? "#1d4ed8" : "#d1d5db",
+            }}
+          >
+            {category}
+          </Button>
+        ))
+      }
     </Box>
   );
 }
