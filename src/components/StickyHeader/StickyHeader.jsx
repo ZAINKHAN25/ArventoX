@@ -19,6 +19,7 @@ function StickyHeader({ selectedCategory, setSelectedCategory }) {
       gap={3}
       p={3}
       zIndex={1000}
+      borderTop={"1px solid #cccdcd"}
     >
       {categories.map((category, index) => (
         <Button

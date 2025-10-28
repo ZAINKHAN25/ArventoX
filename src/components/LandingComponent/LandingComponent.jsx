@@ -1,5 +1,4 @@
 import { Button, Flex, Heading } from '@chakra-ui/react';
-import React from 'react'
 
 function LandingComponent() {
   return (
