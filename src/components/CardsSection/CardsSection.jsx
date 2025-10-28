@@ -1,9 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import CardTemplate from "./CardTemplate.jsx";
 
-import data from "../../DataFile/Data/data.js";
-
-function CardsSection() {
+function CardsSection({ products }) {
   return (
     <Box
       width={"100vw"}
@@ -15,12 +13,12 @@ function CardsSection() {
       padding={10}
     >
       {
-        data.map((item) => (
+        products.map(item => (
           <CardTemplate key={item.id} data={item} />
         ))
       }
     </Box>
-  )
+  );
 }
 
-export default CardsSection
+export default CardsSection;
