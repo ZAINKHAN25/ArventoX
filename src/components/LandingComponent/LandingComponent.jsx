@@ -18,9 +18,9 @@ function LandingComponent() {
       gap={
         { lg: 4, base: 1 }
       }
-      bgGradient="to-r"
-      gradientFrom="#3b82f680"
-      gradientTo={"purple.700"}
+      bgGradient="to-l"
+      gradientTo={"#667de8"}
+      gradientFrom={"#7158b5"}
       color={"white"}
       px={5}
       py={"10vh"}
