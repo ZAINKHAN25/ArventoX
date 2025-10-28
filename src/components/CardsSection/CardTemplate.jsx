@@ -3,7 +3,7 @@ import { Button, Card, Image, Link, Text } from "@chakra-ui/react"
 const CardTemplate = ({ data }) => {
   
   return (
-    <Card.Root maxW="sm" overflow="hidden">
+    <Card.Root maxW={400} overflow="hidden">
 
       <Image
         src={data.imagelink.src}

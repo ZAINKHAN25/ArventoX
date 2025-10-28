@@ -10,7 +10,11 @@ function CardsSection({ products }) {
       alignItems={"center"}
       gap={5}
       flexWrap={"wrap"}
-      padding={10}
+      padding={
+        {
+          lg: 10, base: 5
+        }
+      }
     >
       {
         products.map(item => (

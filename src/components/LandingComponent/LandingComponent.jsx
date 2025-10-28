@@ -5,31 +5,44 @@ function LandingComponent() {
   return (
     <Flex
       width={"100vw"}
-      minH={"60vh"}
+      h={
+        {
+          base: "max-content",
+          lg: "60vh"
+        }
+      }
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"center"}
       flexWrap={"wrap"}
-      gap={4}
+      gap={
+        { lg: 4, base: 1 }
+      }
       bgGradient="to-r"
       gradientFrom="#3b82f680"
-      gradientTo="purple.700"
+      gradientTo={"purple.700"}
       color={"white"}
-      padding={5}
+      px={5}
+      py={"10vh"}
     >
 
       <Heading
-        size={"6xl"}
+        size={
+          { lg: "6xl", base: "4xl" }
+        }
       >
         🛍️ Premium Products
       </Heading>
 
       <Heading
-        size={"3xl"}
+        size={{
+          lg: "3xl",
+          base: "xl"
+        }}
         mb={10}
       >Discover amazing products at unbeatable prices</Heading>
 
-      <Flex flexDirection={"row"} gap={5} flexWrap={"wrap"} justifyContent={"center"}> 
+      <Flex flexDirection={"row"} gap={{ lg: 5, base: 2 }} flexWrap={"wrap"} justifyContent={"center"}>
         <Button
           variant="outline"
           color={"white"}
